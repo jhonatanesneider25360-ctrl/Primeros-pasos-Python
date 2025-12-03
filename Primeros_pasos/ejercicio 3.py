@@ -1,25 +1,31 @@
-#**********  Zona de Función  **********#
-def tomar_numero():
-    numero = int(input("Digite un numero: "))
-    return numero
+# Estructura del While #
+# IINICIO CODIGO FUNCIONES#
+
+print("El programa dira si tu numero es par o immpar. ")
+
+def Diigitar_Numero():
+    Numero = int(input("Digite un numero: "))
+    return Numero
 
 
-def num_digi(dato_numero):
-    while dato_numero!=0:
-        if dato_numero%2==0:
-            mensaje = "El numero es par"
-        else:
-            mensaje = "El numero es impar"
-        return mensaje
+def Comprobar_Numero(Numero):
+    while Numero!=0:
+        if Numero%2==0:
+            Mensaje = "Par."
+            return Mensaje
+        elif Numero %2!= 0 :
+            Mensaje = "Impar."
+            return Mensaje
+    else:
+        Mensaje=(f"{Numero} Par")
+        return Mensaje
 
 
-def imprimir_dato(dato_mensaje):
-    print("El numero es " + dato_mensaje)
+def Imprimir_Dato(Mensaje):
+    print("El numero ingresado es",  Mensaje)
     
-    print("Finalizó el programa")
-    
-    
-#**********  Codigo Principal de Python  **********#
-dato_numero = tomar_numero()
-dato_mensaje = num_digi(dato_numero)
-imprimir_dato(dato_mensaje)
+# ZONA CODIGO PRINCIPAL #
+Pedir_Numero=Diigitar_Numero()
+Llamar_Comprobante=Comprobar_Numero(Pedir_Numero)
+Imprimir=Imprimir_Dato(Llamar_Comprobante)
+print(Imprimir)

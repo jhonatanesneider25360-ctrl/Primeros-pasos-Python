@@ -1,18 +1,27 @@
-#***********  Zona de Función  ***********#
-def cantidad_numero():
-    numero = int(input("Digite un numero del 1 al 12: "))
-    return numero
-def suma_num(num_dos):
-   suma = int(input("Digite otro numero del 1 al 12: "))
-   return suma
-for i in range(0,12):
-    numero=int(input())
-    suma=suma+numero
-def imprimir_numero(dato_numero):
- print("La sumatoria total es: " + str(suma))
+# Estructura For #
+# ZONA CODIGO FUNCIONES #
+
+print ("Este programa es para hacer solo sumas.")
+
+def Ingresar_Cantidad():
+    Cantidad= int(input("Digitar la cantidad de numeros que desesas sumar: "))
+    return Cantidad
+
+def Sumar_Numeros(Cantidad):
+    suma=0
+    for i in range (Cantidad) :
+        print ("Digite el numero", str(i+1),": ")
+        numero=int(input("-> "))
+        suma=(suma+numero)
+    return suma
+
+
+def Imprimir_Numero(Total):
+    print(f"La suma de los numeros igresados es: {str(Total)} \n" )
  
    
-#***********  Codigo Principal de Python  ***********#
-num_dos = cantidad_numero()
-dato_num = suma_num(num_dos)
-imprimir_numero(dato_num)
+# ZONA CODIGO PRINCIPAL #
+Pedir_Cantidad=Ingresar_Cantidad()
+Llamar_suma=Sumar_Numeros(Pedir_Cantidad)
+Imprimir=Imprimir_Numero(Llamar_suma)
+print (Imprimir)
