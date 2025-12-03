@@ -1,4 +1,4 @@
-# Estructura If elid else Funciones #
+# Estructura If elif else Funciones #
 # IINICIO CODIGO #
 
 print ("Este programa dira si tu numero es positivo o neegativo")
